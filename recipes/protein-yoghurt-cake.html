@@ -4,31 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protein Yoghurt Cake</title>
-</head>
+    <link rel="stylesheet" href="../styles.css"> </head>
 <body>
-    <p>
-        <a href="../index.html">Home</a>
-    </p>
-    <h1>Protein Yoghurt Cake</h1>
+    <div class="recipe-page-container"> <p>
+            <a href="../index.html">Home</a>
+        </p>
+        <h1 class="recipe-title">Protein Yoghurt Cake</h1> <div class="recipe-image-container protein-yoghurt-cake-img"></div> 
 
-    <img src="../images/yoghurt-cake.jpg" alt="Cake" height="310" width="310">
+        <h2>Description</h2>
+        <p>Here is a great option for a low calorie high protein snack. Using simple ingredients you can get a sweet treat when that craving hits you!</p>
+        <h2>Ingredients</h2>
+<div class="unit-toggle-container">
+    <span>Units:</span>
+    <button id="metric-btn" class="unit-toggle selected">Metric</button>
+    <button id="imperial-btn" class="unit-toggle">Imperial</button>
+</div>
 
-    <h2>Description</h2>
-    <p>Here is a great option for a low calorie high protein snack. Using simple ingredients you can get a sweet treat when that craving hits you!</p>
-    <h2>ingredients</h2>
-    <ul>
-        <li>200g Greek Yoghurt</li>
-        <li>30g Whey Protein of your favourite flavour</li>
-        <li>2 egg whites</li>
-        <li>1 tbsp Corn Flour</li>
-    </ul>
-    <h2>Steps</h2>
-    <ol>
-        <li>Use a bowl to mix the Yoghurt with Whey protein</li>
-        <li>Add the egg whites and keep mixing</li>
-        <li>Add the Corn Flour and mix a final time</li>
-        <li>Pour the butter in 2 small ramekins</li>
-        <li>Bake for around 20mins at 170c</li>
-    </ol>
+<ul id="ingredients-list">
+    <li class="ingredient" data-metric-value="200g" data-imperial-value="7oz">
+        <span class="metric-measurement">200g</span> 
+        <span class="imperial-measurement" style="display: none;">7oz</span>
+        Greek Yoghurt
+    </li>
+    <li class="ingredient" data-metric-value="30g" data-imperial-value="1oz">
+        <span class="metric-measurement">30g</span> 
+        <span class="imperial-measurement" style="display: none;">1oz</span>
+        Whey Protein of your favourite flavour
+    </li>
+    <li class="ingredient" data-metric-value="60g" data-imperial-value="2">
+        <span class="metric-measurement">60g</span> 
+        <span class="imperial-measurement" style="display: none;">2</span>
+        egg whites
+    </li>
+    <li class="ingredient" data-metric-value="1 tbsp" data-imperial-value="1 tbsp">
+        <span class="metric-measurement">1 tbsp</span> 
+        <span class="imperial-measurement" style="display: none;">1 tbsp</span>
+        Corn Flour
+    </li>
+</ul>
+        <h2>Steps</h2>
+        <ol>
+            <li>Use a bowl to mix the Yoghurt with Whey protein</li>
+            <li>Add the egg whites and keep mixing</li>
+            <li>Add the Corn Flour and mix a final time</li>
+            <li>Pour the butter in 2 small ramekins</li>
+            <li>Bake for around 20mins at 170c</li>
+        </ol>
+    </div>
+
+    <script src="/script.js"></script>
 </body>
 </html>

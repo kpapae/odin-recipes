@@ -4,27 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuna Salad</title>
-</head>
+    <link rel="stylesheet" href="../styles.css"> </head>
 <body>
-    <p>
-        <a href="../index.html">Home</a>
-    </p>
-    <h1>Tuna Salad</h1>
+    <div class="recipe-page-container"> <p>
+            <a href="../index.html">Home</a>
+        </p>
+        <h1 class="recipe-title">Tuna Salad</h1> <div class="recipe-image-container tuna-salad-img"></div> 
 
-    <img src="../images/tuna-salad.jpg" alt="Tuna Salad" height="310" width="310">
+        <h2>Description</h2>
+        <p>Tired from the full and exhausting day you just had? Look what you can prepare in 10 minutes for a quick, easy and healty dinner!</p>
+        <h2>Ingredients</h2>
+<div class="unit-toggle-container">
+    <span>Units:</span>
+    <button id="metric-btn" class="unit-toggle selected">Metric</button>
+    <button id="imperial-btn" class="unit-toggle">Imperial</button>
+</div>
 
-    <h2>Description</h2>
-    <p>Tired from the full and exhausting day you just had? Look what you can prepare in 10 minutes for a quick, easy and healty dinner!</p>
-    <h2>ingredients</h2>
-    <ul>
-        <li>1 can of tuna, drained</li>
-        <li>50g salad dressing of your choice, usually mayonaise is a good option</li>
-        <li>1 tbspn sweet pickle relish</li>
-    </ul>
-    <h2>Steps</h2>
-    <ol>
-        <li>Mash the tuna together with the dressing</li>
-        <li>Mix in the pickle relish</li> 
-    </ol>
+<ul id="ingredients-list">
+    <li class="ingredient" data-metric-value="1 can" data-imperial-value="1 can">
+        <span class="metric-measurement">1 can</span> 
+        <span class="imperial-measurement" style="display: none;">1 can</span>
+        of tuna, drained
+    </li>
+    <li class="ingredient" data-metric-value="50g" data-imperial-value="3tbspn">
+        <span class="metric-measurement">50g</span> 
+        <span class="imperial-measurement" style="display: none;">3tbspn</span>
+        salad dressing of your choice, usually mayonaise is a good option
+    </li>
+    <li class="ingredient" data-metric-value="15g" data-imperial-value="1 tbspn">
+        <span class="metric-measurement">15g</span> 
+        <span class="imperial-measurement" style="display: none;">1 tbspn</span>
+        sweet pickle relish
+    </li>
+</ul>
+        <h2>Steps</h2>
+        <ol>
+            <li>Mash the tuna together with the dressing</li>
+            <li>Mix in the pickle relish</li> 
+        </ol>
+    </div>
+
+    <script src="/script.js"></script>
 </body>
 </html>
